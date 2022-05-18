@@ -1,16 +1,17 @@
 import { CardProject } from "./components/CardProject";
 
-import seguemepsa from "./assets/segueme.png";
+import seguemePsa from "./assets/segueme.png";
 import barber from "./assets/barber.png";
+import todoList from "./assets/todolist.png";
 
 function App() {
   return (
-    <div className="min-h-[100vh] flex flex-wrap">
+    <div className="min-h-[100vh] flex flex-wrap bg-slate-50">
       <CardProject
         description="Projeto para galeria de imagens. Em construção."
         href="https://seguemepsa.vercel.app/"
         imageAlt="Imagem da home do segueme com a frase um batalhão de amor"
-        imageSrc={seguemepsa}
+        imageSrc={seguemePsa}
         name="Projeto Segue-me PSA"
       />
 
@@ -20,6 +21,14 @@ function App() {
         imageAlt="Imagem de um produto de salão de beleza"
         imageSrc={barber}
         name="Projeto Fontenele Barbearia"
+      />
+
+      <CardProject
+        description="Projeto de TODO list."
+        href="https://todo-list-de8q7l98e-henriquedevb.vercel.app/"
+        imageAlt="Imagem do todo list"
+        imageSrc={todoList}
+        name="Projeto TODO list."
       />
     </div>
   );
